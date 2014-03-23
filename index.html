@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algorithm Ramblings</title>
+
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script >
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="blog.css" rel="stylesheet">
+
+ <body>
+
+ 	<div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">Home</a>
+          <a class="blog-nav-item" href="#">About Me</a>
+        </nav>
+      </div>
+    </div>
+
+<div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Algorithm Ramblings</h1>
+        <p class="lead blog-description">Algorithms, Puzzles, Minds....</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Merge Sort</h2>
+            <p class="blog-post-meta">March 22, 2014 by <a href="#">Sreeprasad</a></p>
+
+            <p>This blog post shows explains Merge Sort</p>
+            <hr>
+            <p>Merge sort is a classic example of divide and conquer approach to solve sorting problem. My knowledge about Sorting came mostly from professor Erik Demaine lecture on Intro to Algorithm. I found it interesting and easy to understand. 
+            I also found Princeton lectures on MergeSort extremely easy to understand.
+            <br/><br/>
+            Merge sort does can explained in 3 steps
+            <ol>
+            	<li><u>divide</u> the input part(s)</li>
+            	<li><u>conquer(solve)</u> the parts recursively</li>
+            	<li><u>Combine(merge)</u> the result(s) to solve the original</li>
+            </ol>
+            <br/><br/>
+            <u>Algorithm</u><br/>
+             We divide the array into 2 parts and sort each part recursively.
+             We stop only when the array size is 1
+             When the array size is 1 then no work is done because every sequence is in sorted order.Then we start merging the two arrays each of which has size 1. This part is easy as we need to compare only 2 elements. Merge is done by calling auxiliary procedure called Merge.</br>
+             <br/>
+             <h4><u>merge</u>(A, p, q, r)</h4>
+             merge(A, p, q, r) where A is an array and p, q, and r are indices into the array such that p≤q < r. This ofcourse assumes that subarray A[p...q] and A[q+1...r] 
+             are sorted.
+             <br/>
+             This merging takes  Θ(n) time where n=r-p+1
+             <br/><br/>
+             
+			<script src="https://gist.github.com/sreeprasad/9714524.js"></script>             
+ 
+            </p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Another blog post</h2>
+            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+           
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">New feature</h2>
+            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+			<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            
+          </div><!-- /.blog-post -->
+
+          <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>My name is Sreeprasad.<br/> I am a full stack software developer at BlackRock in NYC</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>               
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+
+
+
+   </body>
+</html>
